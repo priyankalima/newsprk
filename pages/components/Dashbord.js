@@ -32,12 +32,65 @@ const Dashbord = () => {
 
 	}, []);
 
+	const openNav = () => {
+        document.getElementById('myNav').style.display = 'block';
+    }
+    const closeNav = () => {
+        document.getElementById('myNav').style.display = 'none';
+    }
+
+
 	return (
 		<>
 			{user ?
 				<>
 
+                    <div className="container content-view">
+					    <div className='logo'>
+					    <i className="fa fa-newspaper-o" style={{ padding: '5px' }}></i>
+						News<span style={{ color: 'blue' }}>PRK</span></div>
+					     </div>
 
+					   <div className="icon-size">
+                       <Link href="#"><a className='link'><i className="fa fa-search"></i></a></Link>
+                       <Link href="#"><a className='link'><i className="fa fa-bell"></i></a></Link>
+                       <Link href="#"><a className='link'><i className="fa fa-plus"></i></a></Link>
+                       </div>
+
+					  <div id="myNav" class="overlay ">
+                <a href="javascript:void(0)" className="closebtn" onClick={closeNav} >&times;</a>
+                {
+                    user ?
+                    <>
+
+                     <div className="overlay-content">
+                    <Link href="" ><a className='link'>Home</a></Link>
+                    <Link href="" ><a className='link'>Posts</a></Link>
+                    <Link href="" ><a className='link'>Chatgories</a></Link>
+                    <Link href="" ><a className='link'>Pages</a></Link>
+                    <Link href="" ><a className='link'>About Us</a></Link>
+                    <Link href="" ><a className='link'>Contact Us</a></Link>
+                    <button className="btn btn-primary" onClick={() => auth.signOut()}>Logout</button>
+                   
+                    </div>
+                    </>
+                    :
+                    <>
+                     <div className="overlay-content">
+                    <Link href="" ><a className='link'>Home</a></Link>
+                    <Link href="" ><a className='link'>Posts</a></Link>
+                    <Link href="" ><a className='link'>Chatgories</a></Link>
+                    <Link href="" ><a className='link'>Pages</a></Link>
+                    <Link href="" ><a className='link'>About Us</a></Link>
+                    <Link href="" ><a className='link'>Contact Us</a></Link>
+                    <Link href="#"><a className='link'><i className="fa fa-search"></i></a></Link>
+                    <Link href="/components/Dashbord"><a className='link'><i className="fa fa-user"></i></a></Link>
+                    </div>
+                    </>
+                }
+               
+            </div>
+            <span style={{ fontSize: '30px', cursor: 'pointer', marginRight:'20px' }} className="overlay-hidden" onClick={openNav}>&#9776;</span>
 					<div className='row'>
 						<div className='col-sm-3 col-md-3 col-lg-3 '>
 							<div className='left_section'>
@@ -65,25 +118,25 @@ const Dashbord = () => {
 								<DashbordNav />
 								<div className='container'>
 									<div className='row' >
-										<div className='col-sm-3 col-md-3 col-lg-3 '>
+										<div className='col '>
 											<div className='hero-section'>
 
 												<span>10</span><br />
 												<span>POSTS</span></div>
 										</div>
-										<div className='col-sm-3 col-md-3 col-lg-3 '>
+										<div className='col'>
 											<div className='hero-section'>
 												<span>0</span><br />
 												<span>LIKES</span>
 											</div>
 										</div>
-										<div className='col-sm-3 col-md-3 col-lg-3 '>
+										<div className='col '>
 											<div className='hero-section'>
 												<span>0</span><br />
 												<span>COMMENTS</span>
 											</div>
 										</div>
-										<div className='col-sm-3 col-md-3 col-lg-3 '>
+										<div className='col '>
 											<div className='hero-section'>
 												<span>0</span><br />
 												<span>SUBSCRIBED</span>
@@ -93,44 +146,20 @@ const Dashbord = () => {
 									</div>
 								</div>
 
-								<div className="container">
-									<div className="row">
-										<div className="col-sm-12 col-md-12 col-lg-12 ">
-											<div className="hero-section-d">
-												<h5>Trafic</h5>
-												<div class="progress">
-													<div className="progress-bar progress-bar-striped" role="progressbar" style={{ width: "10%" }} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-												</div><br />
-												<div className="progress">
-													<div className="progress-bar progress-bar-striped bg-success" role="progressbar" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-												</div><br />
-												<div className="progress">
-													<div className="progress-bar progress-bar-striped bg-info" role="progressbar" style={{ width: "50%" }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-												</div><br />
-												<div className="progress">
-													<div className="progress-bar progress-bar-striped bg-warning" role="progressbar" style={{ width: "75%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-												</div><br />
-												<div className="progress">
-													<div className="progress-bar progress-bar-striped bg-danger" role="progressbar" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
+								
 
 
 								<div className='container'>
 
 									<div className='row'>
 										<div className='col-sm-6 col-md-6 col-lg-6 '>
-											<div className='hero-section-d col-content-one '>
+											<div className='hero-section-d col-content '>
 												<h1 className="num">10+</h1>
 												<p className="title">ENTERTAINMENT POSTS</p>
 											</div>
 										</div>
 										<div className='col-sm-6 col-md-6 col-lg-6'>
-											<div className='hero-section-d col-content-two'>
+											<div className='hero-section-d col-content'>
 												<h1 className="num">10+</h1>
 												<p className="title">BUSSINESS POSTS</p>
 											</div>
@@ -138,13 +167,13 @@ const Dashbord = () => {
 									</div>
 									<div className='row'>
 										<div className='col-sm-6 col-md-6 col-lg-6'>
-											<div className='hero-section-d col-content-three'>
+											<div className='hero-section-d col-content'>
 												<h1 className="num">10+</h1>
 												<p className="title">FEATURE POSTS</p>
 											</div>
 										</div>
 										<div className='col-sm-6 col-md-6 col-lg-6'>
-											<div className='hero-section-d col-content-four'>
+											<div className='hero-section-d col-content'>
 												<h1 className="num">10+</h1>
 												<p className="title">TRENDING POSTS</p>
 											</div>
@@ -152,13 +181,13 @@ const Dashbord = () => {
 									</div>
 									<div className='row'>
 										<div className='col-sm-6 col-md-6 col-lg-6'>
-											<div className='hero-section-d col-content-five'>
+											<div className='hero-section-d col-content'>
 												<h1 className="num">10+</h1>
 												<p className="title">SPORTS POSTS</p>
 											</div>
 										</div>
 										<div className='col-sm-6 col-md-6 col-lg-6'>
-											<div className='hero-section-d col-content-six'>
+											<div className='hero-section-d col-content'>
 												<h1 className="num">10+</h1>
 												<p className="title">VIDEO POSTS</p>
 											</div>
