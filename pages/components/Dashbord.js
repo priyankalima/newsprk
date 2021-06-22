@@ -54,7 +54,7 @@ const Dashbord = () => {
 					   <div className="icon-size">
                        <Link href="#"><a className='link'><i className="fa fa-search"></i></a></Link>
                        <Link href="#"><a className='link'><i className="fa fa-bell"></i></a></Link>
-                       <Link href="#"><a className='link'><i className="fa fa-plus"></i></a></Link>
+                       <Link href="/Dashboard/CreatePost"><a className='link'><i className="fa fa-plus"></i></a></Link>
                        </div>
 
 					  <div id="myNav" class="overlay ">
