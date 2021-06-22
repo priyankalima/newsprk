@@ -108,6 +108,8 @@
 	background-color: #f5f1f1;
 }
 
+
+
 /* left section */
 .left_section{
 	width: 25%;
@@ -118,8 +120,7 @@
 }
 .right_section{
 	width: 100%;
-    background-color: #f1f1f1;
-	
+    background-color: #fff;
 }
 .logo{
 	color: #f5f1f1;
@@ -140,7 +141,7 @@
 	border:1px solid #f1f1f1;
 	padding: 10px;
 	margin: 10px 0;
-	background-color: rgb(23, 23, 44);
+	background-color: rgb(48, 48, 56);
 	color: #fff;
 	border-radius: 5px;
 	text-align: center;
@@ -270,30 +271,12 @@
 	font-weight: bold;
 }
 
-.col-content-one{
-	background-color: #f1f1f1;
-	color: #F43434;
+.col-content{
+	background-color: #fff;
+	color: #444;
+	border:1px solid #f1f1f1;
 }
-.col-content-two{
-	background-color: #eaf39a;
-	color: #e1f434;
-}
-.col-content-three{
-	background-color: #9df39a;
-	color: #2fe66c;
-}
-.col-content-four{
-	background-color: #9adaf3;
-	color: #34cef4;
-}
-.col-content-five{
-	background-color: #a09af3;
-	color: #4134f4;
-}
-.col-content-six{
-	background-color: #e49af3;
-	color: #f434c4;
-}
+
 .num{
 	padding-top: 30px;
 	font-size: 60px;
@@ -434,6 +417,12 @@
 .btn-outlin{
 	border:1px solid #555;
 }
+.icon-size{
+	display: none;
+}
+.content-view{
+	position: relative;
+}
 
 /* media query mobile view */
 
@@ -459,7 +448,7 @@
 		display:block;
 		position: absolute;
 		top:0;
-		left: 90%;
+		left: 87%;
 		margin-top:5px;
 	}
 	.swipper-hidden{
@@ -467,6 +456,18 @@
 	}
 	.swiper-visible{
 		display: block;
+	}
+	.logo{
+		font-size: 25px;
+		color: #222;
+
+	}
+	.icon-size{
+		display: block;
+		position: absolute;
+		top:10px;
+		left:14pc;
+		margin-top: 5px;
 	}
   }
 
