@@ -52,9 +52,15 @@ const Home = () => {
                                 <span className="video-icon">
                                     <i className="fa fa-play"></i>
                                 </span>
-                                <span className="text-size">Bussiness /</span>
+                                <span className="text-size">Bussiness / </span>
                                 <span className="date-size">18/06/2021</span>
                                 <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                                {/* bottom content for the recent news */}
+                                <div className="mobile-view-content">
+                                    <span>Bussiness /</span>
+                                    <span>18/06/2021</span>
+                                    <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+                                </div>
                             </div>
                         </div>
                         <div className='col-sm-4 col-md-4 col-lg-4'>
@@ -66,7 +72,7 @@ const Home = () => {
                                             <div className='row mb-1'>
 
                                                 <div className='col'>
-                                                    <img src={data.url} class="card-img-left" width="85" height='75' alt='' />
+                                                    <img src={data.url} class="card-img-left" width="100" height='75' alt='' />
                                                 </div>
                                                 <div className='col right'>
                                                     <span >Technology | 21/06/2021</span>
@@ -106,6 +112,7 @@ const Home = () => {
                                                 <img src={data.url} class="card-img" height="250" alt="..." />
                                                 <h5 >{data.title}</h5>
                                                 <p>30/02/2021</p>
+
                                             </div>
 
                                         </SwiperSlide>
@@ -151,7 +158,9 @@ const Home = () => {
                                 <div className="col">
                                     <div className='hero-bsns-content'>
                                         <img src='./img2.jpg' class="card-img-top" alt='s' />
-                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                            <span className="visible-span">22/06/2021</span>
+                                            <span className="top-span">22/06/2021</span> </span>
                                         <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                         <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     </div>
@@ -159,7 +168,10 @@ const Home = () => {
                                 <div className="col">
                                     <div className='hero-bsns-content'>
                                         <img src='./img3.jpg' class="card-img-top" alt='s' />
-                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                            <span className="visible-span">22/06/2021</span>
+                                            <span className="top-span">22/06/2021</span>
+                                        </span>
                                         <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                         <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     </div>
@@ -171,7 +183,10 @@ const Home = () => {
                                 <div className="col">
                                     <div className='hero-bsns-content'>
                                         <img src='./img4.jpg' class="card-img-top" alt='s' />
-                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                            <span className="visible-span">22/06/2021</span>
+                                            <span className="top-span">22/06/2021</span>
+                                        </span>
                                         <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                         <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     </div>
@@ -179,7 +194,10 @@ const Home = () => {
                                 <div className="col">
                                     <div className='hero-bsns-content'>
                                         <img src='./img5.jpg' class="card-img-top" alt='s' />
-                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                            <span className="visible-span">22/06/2021</span>
+                                            <span className="top-span">22/06/2021</span>
+                                        </span>
                                         <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                         <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     </div>
@@ -228,7 +246,10 @@ const Home = () => {
                         <div className="col-sm-6 col-md-6 col-lg-6">
                             <div className='hero-bsns-content'>
                                 <img src='./img3.jpg' class="card-img-top" alt='s' />
-                                <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link>
+                                    <span className="visible-span">22/06/2021</span>
+                                    <span className="top-span">22/06/2021</span>
+                                </span>
                                 <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                 <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             </div>
@@ -236,7 +257,9 @@ const Home = () => {
                         <div className="col-sm-6 col-md-6 col-lg-6">
                             <div className='hero-bsns-content'>
                                 <img src='./img6.jpg' class="card-img-top" alt='s' />
-                                <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                    <span className="visible-span">22/06/2021</span>
+                                    <span className="top-span">22/06/2021</span> </span>
                                 <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                 <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             </div>
@@ -254,8 +277,14 @@ const Home = () => {
                                 <span className="video-icon">
                                     <i className="fa fa-play"></i>
                                 </span>
-                                <span className="float-text"><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                <span className="text-size">Bussiness / </span>
+                                <span className="date-size">18/06/2021</span>
                                 <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                                <div className="mobile-view-content">
+                                    <span>Bussiness /</span>
+                                    <span>18/06/2021</span>
+                                    <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+                                </div>
                             </div>
                         </div>
 
@@ -303,7 +332,10 @@ const Home = () => {
                                 <div className="col">
                                     <div className='hero-bsns-content'>
                                         <img src='./img8.jpg' class="card-img-top" alt='s' />
-                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                            <span className="visible-span">22/06/2021</span>
+                                            <span className="top-span">22/06/2021</span>
+                                        </span>
                                         <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                         <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     </div>
@@ -311,7 +343,10 @@ const Home = () => {
                                 <div className="col">
                                     <div className='hero-bsns-content'>
                                         <img src='./img2.jpg' class="card-img-top" alt='s' />
-                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                            <span className="visible-span">22/06/2021</span>
+                                            <span className="top-span">22/06/2021</span>
+                                        </span>
                                         <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                         <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     </div>
@@ -323,7 +358,10 @@ const Home = () => {
                                 <div className="col">
                                     <div className='hero-bsns-content'>
                                         <img src='./img3.jpg' class="card-img-top" alt='s' />
-                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                            <span className="visible-span">22/06/2021</span>
+                                            <span className="top-span">22/06/2021</span>
+                                        </span>
                                         <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                         <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     </div>
@@ -331,7 +369,10 @@ const Home = () => {
                                 <div className="col">
                                     <div className='hero-bsns-content'>
                                         <img src='./img5.jpg' class="card-img-top" alt='s' />
-                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                            <span className="visible-span">22/06/2021</span>
+                                            <span className="top-span">22/06/2021</span>
+                                        </span>
                                         <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                         <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     </div>
@@ -376,15 +417,18 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-8 col-md-8 col-lg-8">
-                            <h2>Sports News</h2>
+                            <h3>Sports News</h3>
                             <div className="row">
                                 <div className="col-sm-6 col-md-6 col-lg-6">
                                     <div className='hero-bsns-content'>
                                         <img src='./img9.jpg' class="card-img-top" alt='s' />
-                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> | 22/06/2021</span>
+                                        <span style={{ padding: '10px' }}><Link href=""><a style={{ textDecoration: 'none', fontWeight: 'bold' }}>Technology</a></Link> |
+                                            <span className="visible-span">22/06/2021</span>
+                                            <span className="top-span">22/06/2021</span>
+                                        </span>
                                         <h5 style={{ padding: '2px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
                                         <p style={{ padding: '0 0 5px 10px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                        <button className="btn btn-outlin">Learn More</button>
+                                        <button className="btn btn-outlin ">Learn More</button>
                                     </div>
                                 </div>
                                 <div className="col-sm-6 col-md-6 col-lg-6">
