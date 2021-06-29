@@ -58,7 +58,7 @@ const Navbar = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-4 col-md-4 col-lg-4 mb-2">
-                            <h1>News<span style={{ color: 'blue' }}>PRK</span></h1>
+                            <h1><i className="fa fa-newspaper-o"></i>News<span style={{ color: 'blue' }}>PRK</span></h1>
                         </div>
                         <div className="col-sm-8 col-md-8 col-lg-8">
                             <div className='div-content'>
