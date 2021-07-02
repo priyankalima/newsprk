@@ -9,7 +9,7 @@ import SliderSection from './SliderSection';
 
 
 
-export default function Home() {
+export  function Home() {
 
 
     const [darkMode, setDarkMode] = useState(false);
