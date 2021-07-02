@@ -182,6 +182,7 @@
 }
 .hero-bsns-content{
 	position: relative;
+	background-color: #f1f1f1;
 }
 .col-size{
 	padding:7px 0;
@@ -231,7 +232,8 @@
 	padding: 12px 15px;
 	color: #fff;
 	position: absolute;
-	left: 90%;
+	left:90%;
+	top:0;
 	margin-top:10px;
 }
 
@@ -389,7 +391,7 @@
 	font-weight: bold;
 	overflow: hidden;
 	display: -webkit-box;
-	-webkit-line-clamp:2;
+	-webkit-line-clamp:3;
 	-webkit-box-orient:vertical;
 	padding-right: 10px;
 }
@@ -560,70 +562,34 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: #f1f1f1;}
 
 
 /* Style the tab */
-.tab {
-	padding:5px 15px;
-	
+#exTab1{
+	width: 100%;
+	padding:0 !important;
+}
+
+  #exTab1 .tab-content {
+	color : black;
+	padding-top: 20px;
+  }
+  #exTab1 .nav-pills > li > a {
+	border-radius: 5px;
+	background-color: #428bca;
+	padding:10px 23px;
+	margin: 10px;
+	text-decoration: none;
+	color: #fff;
   }
 
-/* sec-section prev and next */
-.sec-section .slick-prev, .slick-next {
-	font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: -20px !important;
-    display: block;
-    width: 30px !important;
-    height: 30px !important;
-    padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: none;
-	border-radius: 5px;
-	background-color:rgb(192, 187, 187) !important;
-    z-index: 1;
-}
-.sec-section .slick-prev{
-	left:92% !important;
-}
-.sec-section .slick-next{
-	left:96% !important;
-}
-.foruth-btn .slick-prev{
-	left:92% !important;
-	z-index: 1;
-	top:-20px;
-	width: 30px !important;
-	border-radius: 5px;
-	height: 30px !important;
-	background-color: rgb(192, 187, 187) !important;
-}
-.foruth-btn .slick-next{
-	left:96% !important;
-	z-index: 1;
-	top:-20px !important;
-	background-color: rgb(192, 187, 187)!important;
-}
-.trending-btn .slick-prev{
-    left:92% !important;
-	z-index: 1;
-	top:-20px;
-	width: 30px !important;
-	border-radius: 5px;
-	height: 30px !important;
-	background-color: rgb(192, 187, 187) !important;
-}
 
 
 /* dark and light mode */
 .dark-mode {
-	background-color: #1a1919;
-	color: #999;
+	background-color: rgb(31, 31, 44);
+	color: #fff;
 	height: 100%;
 	transition: background-color 0.25s ease-in-out;
   }
@@ -641,7 +607,7 @@
 	position: relative;
 	display: inline-block;
 	width: 60px;
-	height: 14px;
+	height: 10px;
   }
   
   .switch input {
@@ -711,6 +677,17 @@
   }
   .switch-checkbox {
 	padding: 10px;
+  }
+
+  .col-content{
+	  background-color: #f5f1f1;
+	  padding: 10px;
+	  margin: 10px;
+  }
+  .ads-content{
+	  background-color: rgb(95, 95, 102);
+	  padding: 10px;
+	  height: 300px;
   }
   
 
