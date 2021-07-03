@@ -41,7 +41,7 @@ const SliderSection = () => {
     return (
         <>
             {/* section content first row */}
-            <section className="section-content">
+            <section className="section-content" id="c1">
                 <div className="container">
                     <Swiper
                         slidesPerView={3}
@@ -51,7 +51,7 @@ const SliderSection = () => {
                             "clickable": true
                         }}
 
-                        className="mySwiper">
+                        className="mySwipe">
                         {
                             dataList ? dataList.map(data => {
                                 return (
@@ -60,7 +60,7 @@ const SliderSection = () => {
                                             <div className=".hero-bsns-content col-size">
                                                 <div className="row">
                                                     <div className="col">
-                                                        <img src="./img2.jpg" width="150" height="90" />
+                                                        <img src={data.url} width="150" height="90" />
                                                     </div>
                                                     <div className="col">
                                                         <span>Technology / 23.07.2021</span>
@@ -101,7 +101,15 @@ const SliderSection = () => {
                                         return (
                                             <>
                                                 <SwiperSlide>
-                                                    <img src={data.url} className="card-img" height="500" />
+                                                    <div className="hero-bsns-content">
+                                                        <img src={data.url} className="card-img" />
+                                                        <div className="video-icon">
+                                                            <i className="fa fa-play"></i>
+                                                        </div>
+                                                        <span className="date-size">Technology / 03-07-2021</span>
+                                                        <h2>The property 100-seat amphitheater and a swimming pond with sandy shower</h2>
+                                                        <p className="float-text">The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower</p>
+                                                    </div>
                                                 </SwiperSlide>
                                             </>
                                         )
@@ -354,7 +362,7 @@ const SliderSection = () => {
                                                 <div className="col">
                                                     <span>Technology / 23.07.2021</span>
                                                     <h6 className="h6 mt-1">
-                                                    The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower
+                                                        The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower
                                                     </h6>
                                                 </div>
                                             </div>
@@ -388,6 +396,9 @@ const SliderSection = () => {
                                         <SwiperSlide>
                                             <div className="hero-bsns-content">
                                                 <img src={data.url} className="card-img" height="300" />
+                                                <span className="date-size">Technology / 03-07-2021</span>
+                                                <h5 className="h5">The property 100-seat amphitheater and a swimming pond with sandy shower</h5>
+                                                        
                                             </div>
                                         </SwiperSlide>
                                     </>
@@ -569,7 +580,7 @@ const SliderSection = () => {
                                                             <div className="col">
                                                                 <span>Technology / 23.07.2021</span>
                                                                 <h6 className="h6 mt-1">
-                                                                The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower
+                                                                    The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower
                                                                 </h6>
                                                             </div>
                                                         </div>
@@ -631,7 +642,8 @@ const SliderSection = () => {
                                 <div className="video-icon">
                                     <i className="fa fa-play"></i>
                                 </div>
-                                <h4>The property 100-seat amphitheater and a swimming pond with sandy shower</h4>
+                                <span className="date-size">Bussiness / 03-07-2021</span>
+                                <h2 className="h2">The property 100-seat amphitheater and a swimming pond with sandy shower</h2>
                                 <p className="float-text">The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower</p>
                             </div>
                         </div>
@@ -688,11 +700,13 @@ const SliderSection = () => {
                                     <img src="./img.jpg" className="card-img" />
                                     <h5>Copa America: Luis Suarez from devastated US</h5>
                                     <p>The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower…</p>
+                                    <button className="btn btn-button">Learn More</button>
                                 </div>
                                 <div className="col">
                                     <img src="./img.jpg" className="card-img" />
                                     <h5>Copa America: Luis Suarez from devastated US</h5>
                                     <p>The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower…</p>
+                                    <button className="btn btn-button">Learn More</button>
                                 </div>
                             </div>
                             <div className="row">
@@ -700,11 +714,13 @@ const SliderSection = () => {
                                     <img src="./img.jpg" className="card-img" />
                                     <h5>Copa America: Luis Suarez from devastated US</h5>
                                     <p>The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower…</p>
+                                    <button className="btn btn-button">Learn More</button>
                                 </div>
                                 <div className="col">
                                     <img src="./img.jpg" className="card-img" />
                                     <h5>Copa America: Luis Suarez from devastated US</h5>
                                     <p>The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower…</p>
+                                    <button className="btn btn-button">Learn More</button>
                                 </div>
                             </div>
                             <h4>Sports News</h4>
@@ -713,6 +729,7 @@ const SliderSection = () => {
                                     <img src="./img4.jpg" className="card-img" />
                                     <h5>Copa America: Luis Suarez from devastated US</h5>
                                     <p>The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower…</p>
+                                    <button className="btn btn-button">Learn More</button>
                                 </div>
                                 <div className="col-sm-6 col-md-6 col-lg-6">
                                     <Swiper
@@ -761,6 +778,7 @@ const SliderSection = () => {
                                 <div className="col-sm-6 col-md-6 col-lg-6">
                                     <h5>Copa America: Luis Suarez from devastated US</h5>
                                     <p>The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower…</p>
+                                    <button className="btn btn-button">Learn More</button>
                                 </div>
                             </div>
                             <div className='row mb-2'>
@@ -770,13 +788,14 @@ const SliderSection = () => {
                                 <div className="col-sm-6 col-md-6 col-lg-6">
                                     <h5>Copa America: Luis Suarez from devastated US</h5>
                                     <p>The property, complete with 30-seat screening from room, a 100-seat amphitheater and a swimming pond with sandy shower…</p>
+                                    <button className="btn btn-button">Learn More</button>
                                 </div>
                             </div>
 
 
                         </div>
                         <div className="col-sm-4 col-md-4 col-lg-4">
-                            <h4 className="mt-3 mb-2">Popular Posts</h4>
+                            <h4 className="mt-3 mb-2">Most Shared</h4>
                             <Swiper
                                 direction={'vertical'}
                                 slidesPerView={'auto'}
@@ -797,7 +816,10 @@ const SliderSection = () => {
                                                             </div>
                                                             <div className="col">
                                                                 <span>Technology / 23.07.2021</span>
-                                                                <h6 className="h6 mt-1"></h6>
+                                                                <h6 className="h6 mt-1">
+                                                                    <i className="fa fa-facebook m-1"></i><br/>
+                                                                    <span className="m-1" style={{fontSize:'10px'}}>20k <i className="fa fa-share m-1" style={{fontSize:'10px'}}></i></span>
+                                                                </h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -811,7 +833,7 @@ const SliderSection = () => {
                             </Swiper>
 
                             <div>
-                            <h5>Upcomming Matches</h5>
+                                <h5>Upcomming Matches</h5>
                                 <div className=".hero-bsns-content col-size">
                                     <div className="row">
                                         <div className="col">
@@ -868,8 +890,8 @@ const SliderSection = () => {
                                     </div>
                                 </div>
                             </div>
-                            
-                             {/* *********************** */}
+
+                            {/* *********************** */}
                             <h4>Chategories</h4>
                             <div className="row">
                                 <div className="col col-content">Restuarent</div>
