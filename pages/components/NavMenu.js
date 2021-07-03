@@ -23,6 +23,7 @@ const Navmenu = () => {
         document.getElementById('myNav').style.display = 'none';
     }
 
+    
 
 
     return (
@@ -64,23 +65,49 @@ const Navmenu = () => {
                     <nav className="navbar p-3">
                         <div className="container">
                             <div className="left-content">
-                                <Link href="" ><a className='link'>Home</a></Link>
-                                <Link href="" ><a className='link'>Posts</a></Link>
-                                <Link href="" ><a className='link'>Chatgories</a></Link>
-                                <Link href="" ><a className='link'>Pages</a></Link>
-                                <Link href="" ><a className='link'>About Us</a></Link>
-                                <Link href="" ><a className='link'>Contact Us</a></Link>
+                                <div className="menu" ><Link href="" ><a className='link'>Home</a></Link></div>
+                                <div className="dropdown" >
+                                    <button className="dropbtn">Posts <span><i className="fa fa-caret-down"></i></span></button>
+
+                                    <div className="dropdown-content">
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                    </div>
+                                </div>
+                                <div className="dropdown" >
+                                    <button className="dropbtn">Pages <span><i className="fa fa-caret-down"></i></span></button>
+
+                                    <div className="dropdown-content">
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                    </div>
+                                </div>
+                                <div className="dropdown" >
+                                    <button className="dropbtn">Chatgories <span><i className="fa fa-caret-down"></i></span></button>
+
+                                    <div className="dropdown-content">
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                    </div>
+                                </div>
+                                <div className="menu" ><Link href="" ><a className='link'>About Us</a></Link></div>
+                                <div className="menu"><Link href="" ><a className='link'>Contact Us</a></Link></div>
                             </div>
 
 
-                            <div className="right-content">
-                                <div className="date">
+                            <div className="right-content row">
+                                <div className="col">
                                     <select>
                                         <option>English</option>
                                         <option>Hindi</option>
                                     </select>
                                 </div>
-                                <div className="social">
+                               
+
+                                <div className="col">
                                     <Link href="#"><a className='link'><i className="fa fa-search"></i></a></Link>
                                     <Link href="/components/Dashbord"><a className='link'><i className="fa fa-user"></i></a></Link>
 
@@ -95,34 +122,58 @@ const Navmenu = () => {
                 <a href="javascript:void(0)" className="closebtn" onClick={closeNav} >&times;</a>
                 {
                     user ?
-                    <>
-                     <div className="overlay-content">
-                    <Link href="" ><a className='link'>Home</a></Link>
-                    <Link href="" ><a className='link'>Posts</a></Link>
-                    <Link href="" ><a className='link'>Chatgories</a></Link>
-                    <Link href="" ><a className='link'>Pages</a></Link>
-                    <Link href="" ><a className='link'>About Us</a></Link>
-                    <Link href="" ><a className='link'>Contact Us</a></Link>
-                    <Link href="/components/Dashbord"><a className="dash">Dashbord</a></Link>
-                    <button className="btn btn-primary" onClick={() => auth.signOut()}>Logout</button>
-                   
-                    </div>
-                    </>
-                    :
-                    <>
-                     <div className="overlay-content">
-                    <Link href="" ><a className='link'>Home</a></Link>
-                    <Link href="" ><a className='link'>Posts</a></Link>
-                    <Link href="" ><a className='link'>Chatgories</a></Link>
-                    <Link href="" ><a className='link'>Pages</a></Link>
-                    <Link href="" ><a className='link'>About Us</a></Link>
-                    <Link href="" ><a className='link'>Contact Us</a></Link>
-                    <Link href="#"><a className='link'><i className="fa fa-search"></i></a></Link>
-                    <Link href="/components/Dashbord"><a className='link'><i className="fa fa-user"></i></a></Link>
-                    </div>
-                    </>
+                        <>
+                            <div className="overlay-content">
+                                <Link href="" ><a className='link'>Home</a></Link>
+                                <Link href="" ><a className='link'>Posts</a></Link>
+                                <Link href="" ><a className='link'>Chatgories</a></Link>
+                                <Link href="" ><a className='link'>Pages</a></Link>
+                                <Link href="" ><a className='link'>About Us</a></Link>
+                                <Link href="" ><a className='link'>Contact Us</a></Link>
+                                <Link href="/components/Dashbord"><a className="dash">Dashbord</a></Link>
+                                <button className="btn btn-primary" onClick={() => auth.signOut()}>Logout</button>
+
+                            </div>
+                        </>
+                        :
+                        <>
+                            <div className="overlay-content">
+                            <div className="menu" ><Link href="" ><a className='link'>Home</a></Link></div>
+                                <div className="dropdown" >
+                                    <button className="dropbtn">Posts <span><i className="fa fa-caret-down"></i></span></button>
+
+                                    <div className="dropdown-content">
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                    </div>
+                                </div>
+                                <div className="dropdown" >
+                                    <button className="dropbtn">Pages <span><i className="fa fa-caret-down"></i></span></button>
+
+                                    <div className="dropdown-content">
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                    </div>
+                                </div>
+                                <div className="dropdown" >
+                                    <button className="dropbtn">Chatgories <span><i className="fa fa-caret-down"></i></span></button>
+
+                                    <div className="dropdown-content">
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                        <Link href="" ><a className='link'>Home</a></Link>
+                                    </div>
+                                </div>
+                                <div className="menu" ><Link href="" ><a className='link'>About Us</a></Link></div>
+                                <div className="menu"><Link href="" ><a className='link'>Contact Us</a></Link></div>
+                                <Link href="#"><a className='link'><i className="fa fa-search"></i></a></Link>
+                                <Link href="/components/Dashbord"><a className='link'><i className="fa fa-user"></i></a></Link>
+                            </div>
+                        </>
                 }
-               
+
             </div>
             <span style={{ fontSize: '30px', cursor: 'pointer' }} className="overlay-hidden" onClick={openNav}>&#9776;</span>
         </>
